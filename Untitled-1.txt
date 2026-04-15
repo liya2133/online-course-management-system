@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!DOCTYPE html>
+<html lang="en">
+   
+
+
+<?php require('../config/autoload.php'); ?>
+
+<?php
+$dao=new DataAccess();
+
+
+
+?>
+<head>
+    <style>
+/* General Page Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container-fluid .text-white a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.page-header {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.upper {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.upper h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.label {
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Button Styles */
+.btn-grp {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button.buttons {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#btn-1 {
+    background-color: #007bff;
+    color: white;
+}
+
+#btn-1:hover {
+    background-color: #0056b3;
+}
+
+#btn-2 {
+    background-color: #6c757d;
+    color: white;
+}
+
+#btn-2:hover {
+    background-color: #5a6268;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link rel="stylesheet" href="ui.css">
+ 
+    <meta charset="utf-8">
+    <title>Eduworld</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary">EDU</span>world</h1>
+                </a>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <small>L street,Angamaly</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+                        <small>info@eduworld.com</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <small>+012 345 6789</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div class="plans-section" id="rooms">
+				 <div class="container">
+
+<div class="container-fluid page-header" style="margin-bottom: 90px;">
+<div class="container">
+    <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+        <h3 class="display-4 text-white text-uppercase">Course category</h3>
+        <div class="d-inline-flex text-white">
+            <p class="m-0 text-uppercase"><a class="text-white" href="index.php">Home</a></p>
+            <i class="fa fa-angle-double-right pt-1 px-3"></i>
+            <p class="m-0 text-uppercase">course category</p>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+</head>
+
+<body>
+<?
+
+$coid = "";
+$semail="";
+$total="";
+$status="";
+$dao=new DataAccess();
+?>
+
+
+
+
+<?php
+if(isset($_POST["btn_insert"]))
+{
+    if(!isset($_SESSION['semail']))
+
+    {
+	   header('location:payy.php');
+  }
+else
+  {
+$name=$_SESSION['semail'];
+$coid = $_GET['id'];
+
+
+$q1="select * from course where coid=".$coid ;
+
+$info1=$dao->query($q1);
+$status=1;
+$date1=date('Y-m-d',time());
+$total=$info1[0]["cofee"];
+
+$sql = "INSERT INTO joining(semail,coid,cofee,status,joiningdate) VALUES ('$semail','$coid','$cofee','$status','$joinigdate')";
+$conn->query($sql);
+$_SESSION['amount']=$total;
+echo $sql;
+header('location:payy.php');
+}
+}
+
+if(isset($_POST["cancel"]))
+{
+   
+	   header('location:displaycategory.php');
+  
+}
+
+
+?>
+
+
+<?php
+$dao=new DataAccess();
+?>
+
+<?php	$coid=$_GET['id']; 
+
+
+
+			 $q="select * from course where coid=".$coid ;
+
+$info=$dao->query($q);
+$iname=$info[0]["coname"];
+?>
+ 
+   
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+ <div class="upper">
+        <div class="upper-left">
+<?php 
+if(isset($_SESSION['semail']))
+{ 
+   $name=$_SESSION['semail'];
+?>
+
+ <h7 class="title-w3-agileits title-black-wthree"><?php  echo $name ?></h7>
+
+<?php } ?>
+
+
+
+            <h3>Course Details</h3><br>
+           
+        <div class="content">
+            <div style="display: block;">
+                <label for="name">Course Name:</label>
+                 <label for="name"><?php echo $info[0]["coname"]; ?></label><br><br>
+                
+                 <label for="price">Course Fee:</label><br>
+                <input id="price" name="cfee" type="text" value="<?php echo $info[0]["cofee"];  ?>" readonly style="margin-top: 8px;"><br>
+
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="btn-grp">
+                <button class="buttons" name="btn_insert" id="btn-1">Payment</button>
+                <button class="buttons" name="cancel" id="btn-2">cancel</button>
+
+            </div>
+            </form>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
